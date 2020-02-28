@@ -11,13 +11,13 @@ const Login = () => {
 	});
 	const history = useHistory();
 
+	// Form handles
 	const handleChange = e => {
 		setCredentials({
 			...credentials,
 			[e.target.name]: e.target.value
 		});
 	};
-
 	const handleSubmit = e => {
 		e.preventDefault();
 		axios
@@ -32,7 +32,7 @@ const Login = () => {
 	};
 
 	return (
-		<>
+		<div style={{ margin: '0 auto' }}>
 			<h1>Welcome to the Bubble App!</h1>
 			<form onSubmit={handleSubmit}>
 				<input
@@ -42,6 +42,7 @@ const Login = () => {
 					value={credentials.username}
 					onChange={handleChange}
 					required
+					style={{ width: '100%' }}
 				/>
 				<input
 					type='password'
@@ -50,10 +51,11 @@ const Login = () => {
 					value={credentials.password}
 					onChange={handleChange}
 					required
+					style={{ width: '100%' }}
 				/>
 				<button type='submit'>Login</button>
 			</form>
-		</>
+		</div>
 	);
 };
 

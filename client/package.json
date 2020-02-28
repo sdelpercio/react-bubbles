@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@potion/element": "^1.0.0-next.0",
+    "@potion/extra": "^1.0.0-next.0",
     "@potion/layout": "^1.0.0-next.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
