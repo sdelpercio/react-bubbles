@@ -24,7 +24,7 @@ const Login = () => {
 			.post('http://localhost:5000/api/login', credentials)
 			.then(res => {
 				window.localStorage.setItem('token', res.data.payload);
-				history.push('/bubbles-page');
+				history.push('/bubble-page');
 			})
 			.catch(err => {
 				console.log('error from post', err);
